@@ -15,3 +15,11 @@ class Translate(models.Model):
 
     def __str__(self):
         return self.translate
+
+class ChooseTranslate(models.Model):
+    translate = models.ForeignKey(Translate, on_delete=models.CASCADE, related_name='choices')
+    card = models.ForeignKey(Card, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ("card", "user")

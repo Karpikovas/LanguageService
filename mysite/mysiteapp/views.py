@@ -1,5 +1,6 @@
 from django.http import JsonResponse
 from .models import Card, Translate
+from .serializers import CardSerializer, TranslateSerializer
 
 from django.shortcuts import get_object_or_404
 
@@ -17,6 +18,6 @@ def translate_list(request, pk):
     card = get_object_or_404(Card, pk=pk)
     data = {
         "word": card.word,
-        "translate": card.translate_set.first()
+        "translate": card.translate_set
     }
     return JsonResponse(data)
