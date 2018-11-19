@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from .views import words_list, translate_list
 
-from .apiviews import WordsList, WordDetail, ChooseTranslateView, TranslateList
-
+from .apiviews import WordsList, WordDetail, ChooseTranslateView, TranslateList, GetWords
+from .views import get_api
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('words/', WordsList.as_view(), name="words_list"),
+
+    path('test/', GetWords.as_view(), name="get_words"),
+
     path("words/<int:pk>/translates/", TranslateList.as_view(), name="translate_list"),
     path("words/<int:pk>/translates/<int:translate_pk>/vote/", ChooseTranslateView.as_view(), name="choose_translate")
 ]
