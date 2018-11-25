@@ -48,8 +48,7 @@ class GetWords(generics.ListCreateAPIView):
         self.data = None
 
 
-    def post(self, request):
-        self.word = "time"
+    def post(self, request, pk):
         url = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key={0}&lang=en-ru&text={1}".format(self.key, request.data["word"])
         response = requests.get(url)
         self.data = response.json()
@@ -57,7 +56,7 @@ class GetWords(generics.ListCreateAPIView):
         translates.append(self.data['def'][0]['tr'][0]['text'])
         #for i in len(self.data['def'][0]['tr'][0]['syn'])-1:
          #   translates.append(self.data['def'][0]['tr'][0]['syn'][i])
-        data = {'word': self.data['def'][0]['text']}
+        data = {'word': self.data['def'][0]['text'], 'translates': {'card_id': self.kwargs["pk"], 'translate': self.data['def'][0]['tr'][0]['text']}}
         #return Response(request.data, status=status.HTTP_201_CREATED)
         serializer = CardSerializer(data=data)
         if serializer.is_valid():
