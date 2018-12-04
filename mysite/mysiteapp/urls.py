@@ -34,8 +34,14 @@ router.register(r'cards', CardsViewSet, basename='cards_list')
 urlpatterns += router.urls
 
 """
+from rest_framework import routers
 from django.urls import path
 from . import views
+from .views import Cards, CardsViewSet
+from .apiviews import WordsList
+
+
 urlpatterns = [
     path('', views.index),
+    path('cards/',WordsList.as_view())
 ]

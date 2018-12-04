@@ -44,11 +44,10 @@ class CardsViewSet(viewsets.ModelViewSet):
     data = None
 
 
-
-    def get(self, request):
-        if request.accepted_renderer.format == 'html':
-            data = {'Cards': self.queryset}
-            return Response(data, template_name='exercises\enter_word')
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return CardSerializer
+        return CardSerializerShort
 
 
 

@@ -16,6 +16,12 @@ class CardSerializer(serializers.ModelSerializer):
         model = Card
         fields = '__all__'
 
+class CardSerializerShort(serializers.ModelSerializer):
+
+    class Meta:
+        model = Card
+        fields = '__all__'
+
 
 class AnswerSerializer(serializers.ModelSerializer):
 

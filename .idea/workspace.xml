@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4aebaf8-06ba-45ea-af79-3710322f2369" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/static/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/templates/exercises/enter_word.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/src/components/DataProvider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/src/components/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/mysiteapp/src/components/Table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/migrations/0002_remove_card_transcription.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/migrations/0003_remove_translate_is_correct.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/.babelrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/webpack.config.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +59,11 @@
         <counts>
           <entry key="babelrc" value="1" />
           <entry key="css" value="1" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="html" value="4" />
-          <entry key="js" value="3" />
+          <entry key="js" value="12" />
           <entry key="json" value="3" />
-          <entry key="py" value="10" />
+          <entry key="py" value="13" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -74,80 +72,106 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="4" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="3" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="10" />
+          <entry key="JavaScript" value="12" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="13" />
-          <entry key="html" value="249" />
-          <entry key="json" value="31" />
-          <entry key="py" value="3043" />
+          <entry key="gitignore" value="14" />
+          <entry key="html" value="391" />
+          <entry key="js" value="269" />
+          <entry key="json" value="52" />
+          <entry key="py" value="3168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="13" />
-          <entry key="HTML" value="249" />
-          <entry key="JSON" value="31" />
-          <entry key="Python" value="3043" />
+          <entry key="HTML" value="391" />
+          <entry key="JSON" value="52" />
+          <entry key="JavaScript" value="269" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="3168" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-129">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="271">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
               <folding>
-                <element signature="e#1088#1116#0" expanded="true" />
+                <element signature="e#1088#1122#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/package.json">
+        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="220">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/.babelrc">
+        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="200">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/webpack.config.js">
+        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="60">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="92" column="28" lean-forward="true" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            <state relative-caret-position="-629">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -156,36 +180,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/static/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2460">
-              <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/apiviews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="480">
               <caret line="24" column="42" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="42" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/components/List.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="30" column="4" selection-start-line="20" selection-start-column="3" selection-end-line="30" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -210,14 +220,12 @@
       <list>
         <option value="$PROJECT_DIR$/mysite/mysiteapp/migrations/serializers.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/mysite/.gitignore" />
         <option value="$PROJECT_DIR$/mysite/manage.py" />
         <option value="$PROJECT_DIR$/mysite/static/dict.json" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/apiviews.py" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/admin.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/mysiteapp/serializers.py" />
         <option value="$PROJECT_DIR$/mysite/static/index.html" />
         <option value="$PROJECT_DIR$/mysite/templates/index.html" />
         <option value="$PROJECT_DIR$/mysite/templates/exercises/enter_word.html" />
@@ -225,14 +233,20 @@
         <option value="$PROJECT_DIR$/mysite/mysiteapp/static/base.css" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/static/css/base.css" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/templates/exercises/enter_word.html" />
-        <option value="$PROJECT_DIR$/mysite/mysiteapp/src/index.js" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js" />
-        <option value="$PROJECT_DIR$/mysite/package.json" />
         <option value="$PROJECT_DIR$/mysite/.babelrc" />
         <option value="$PROJECT_DIR$/mysite/webpack.config.js" />
+        <option value="$PROJECT_DIR$/mysite/.gitignore" />
+        <option value="$PROJECT_DIR$/mysite/mysiteapp/src/components/DataProvider.js" />
+        <option value="$PROJECT_DIR$/mysite/mysiteapp/src/components/Table.js" />
+        <option value="$PROJECT_DIR$/mysite/package.json" />
+        <option value="$PROJECT_DIR$/mysite/mysiteapp/serializers.py" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/views.py" />
-        <option value="$PROJECT_DIR$/mysite/mysiteapp/templates/index.html" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/mysiteapp/src/components/List.js" />
+        <option value="$PROJECT_DIR$/mysite/mysiteapp/src/index.js" />
+        <option value="$PROJECT_DIR$/mysite/mysiteapp/src/components/App.js" />
+        <option value="$PROJECT_DIR$/mysite/mysiteapp/templates/index.html" />
       </list>
     </option>
   </component>
@@ -243,11 +257,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/mysite/node_modules" />
+    <handled-path value="$PROJECT_DIR$/mysite/frontend/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/mysite/package.json" />
+      <path value="$PROJECT_DIR$/mysite/frontend/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -272,19 +286,6 @@
               <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
               <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysiteapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="mysiteapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,7 +351,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32013422" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32013422" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -362,7 +363,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -451,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -488,16 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
@@ -519,22 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/apiviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="42" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -552,34 +520,115 @@
     <entry file="file://$PROJECT_DIR$/mysite/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="7" column="228" selection-start-line="7" selection-start-column="228" selection-end-line="7" selection-end-column="228" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/components/Table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/components/DataProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/apiviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="42" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="92" column="28" lean-forward="true" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        <state relative-caret-position="-629">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="271">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="e#1088#1122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/urls.py">
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="200">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/components/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="4" selection-start-line="20" selection-start-column="3" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <element signature="e#1088#1116#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
