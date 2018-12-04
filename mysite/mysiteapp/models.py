@@ -17,9 +17,20 @@ class Translate(models.Model):
         return self.translate
 
 
-class ChooseTranslate(models.Model):
-    translate = models.ForeignKey(Translate, on_delete=models.CASCADE, related_name='choices')
+class Answer(models.Model):
     card = models.ForeignKey(Card, on_delete=models.CASCADE)
+    answer_text = models.CharField(max_length=200)
+    is_correct = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.answer_text
+
+
+class ChooseTranslate(models.Model):
+    card = models.ForeignKey(Card, on_delete=models.CASCADE)
+    answer = models.ForeignKey(Answer, on_delete=models.CASCADE, default=False)
+
+
     #user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     #class Meta:

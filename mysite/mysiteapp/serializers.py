@@ -1,16 +1,8 @@
 from rest_framework import serializers
-from .models import Card, Translate, ChooseTranslate
-
-
-class ChooseTranslateSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = ChooseTranslate
-        fields = '__all__'
+from .models import *
 
 
 class TranslateSerializer(serializers.ModelSerializer):
-    #choices = ChooseTranslateSerializer(many=True, required=False)
 
     class Meta:
         model = Translate
@@ -22,5 +14,19 @@ class CardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Card
+        fields = '__all__'
+
+
+class AnswerSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Answer
+        fields = ('card', 'is_correct')
+
+
+class ChooseTranslateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ChooseTranslate
         fields = '__all__'
 

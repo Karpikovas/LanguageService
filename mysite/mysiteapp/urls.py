@@ -1,25 +1,13 @@
-"""mysite URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include, url
 from .views import words_list, translate_list
 from rest_framework import routers
 
 from .apiviews import WordsList, WordDetail, ChooseTranslateView, TranslateList, GetWords
-from .views import CardsViewSet
+from .views import Cards, CardsViewSet
+"""
 """
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,14 +17,25 @@ urlpatterns = [
 
     path("words/<int:pk>/translates/", TranslateList.as_view(), name="translate_list"),
     path("words/<int:pk>/translates/<int:translate_pk>/vote/", ChooseTranslateView.as_view(), name="choose_translate")
-]
+]"""
 """
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='Pastebin API')
+
 urlpatterns = [
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('cards/', Cards.as_view()),
+    url(r'^docs', schema_view)
 ]
 router = routers.DefaultRouter()
 
-
-router.register(r'cards', CardsViewSet)
-
+router.register(r'cards', CardsViewSet, basename='cards_list')
 urlpatterns += router.urls
+
+"""
+from django.urls import path
+from . import views
+urlpatterns = [
+    path('', views.index),
+]
