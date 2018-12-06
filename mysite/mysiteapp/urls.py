@@ -39,9 +39,15 @@ from django.urls import path
 from . import views
 from .views import Cards, CardsViewSet
 from .apiviews import WordsList
-
+from .views import *
+"""
 
 urlpatterns = [
-    path('', views.index),
-    path('cards/',WordsList.as_view())
-]
+    path('cards/',WordsList.as_view()),
+    path('users/register', UserCreation.as_view())
+]"""
+
+router = routers.DefaultRouter()
+
+router.register(r'cards', CardsView, basename='cards_list')
+urlpatterns = router.urls

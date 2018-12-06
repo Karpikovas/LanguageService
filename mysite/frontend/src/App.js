@@ -1,28 +1,58 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { connect } from 'react-redux';
+import 'antd/dist/antd.css';
+import CustomLayout from './Layout';
+import { BrowserRouter as Router } from 'react-router-dom';
+import BaseRouter from './routes';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div>
+            <Router>
+                <CustomLayout>
+                    <BaseRouter/>
+                </CustomLayout>
+            </Router>
+        </div>
+    );
+  }
+}
+export default connect(
+    state => ({}),
+    dispatch => ({})
+)(App);
+
+/*
+class App extends Component {
+  state = {
+    cards: []
+  };
+
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/api/cards/');
+      const card = await res.json();
+      this.setState({
+        cards: card
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.cards.map(item => (
+          <div key={item.id}>
+            <h1>{item.word}</h1>
+          </div>
+        ))}
       </div>
     );
   }
 }
-
 export default App;
+*/

@@ -2,6 +2,18 @@ from django.db import models
 #from django.contrib.auth.models import User
 
 
+class CardWord(models.Model):
+    word = models.CharField(max_length=200)
+    translate = models.CharField(max_length=200)
+    rate = models.IntegerField(default=0)
+    is_learned = models.BooleanField(default=False)
+    pos = models.CharField(max_length=200, default='')
+
+    def __str__(self):
+        return self.word
+
+
+
 class Card(models.Model):
     word = models.CharField(max_length=200)
 
