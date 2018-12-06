@@ -2,9 +2,10 @@ import { createStore} from 'redux'
 import { Provider } from 'react-redux'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import 'antd/dist/antd.less';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import SimpleSlider from './Simple';
 
 function cards(state = [], action) {
     if (action.type === 'ADD_CARD'){

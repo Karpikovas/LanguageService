@@ -1,7 +1,6 @@
 import React from 'react';
 import Cards from './Cards';
 import axios from 'axios';
-
 class CardsListView extends React.Component{
     state = {
         cards: []

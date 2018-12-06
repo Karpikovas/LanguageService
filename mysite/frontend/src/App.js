@@ -2,18 +2,21 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import 'antd/dist/antd.css';
 import CustomLayout from './Layout';
-import { BrowserRouter as Router } from 'react-router-dom';
-import BaseRouter from './routes';
-
+import {BrowserRouter as Router, Switch} from 'react-router-dom';
+import MainRouter from './MainRouter';
+import BaseRouter from "./routes";
+import TranslateRouter from './routes2'
 
 class App extends Component {
   render() {
     return (
+
         <div>
             <Router>
-                <CustomLayout>
+                <Switch>
+                   <TranslateRouter/>
                     <BaseRouter/>
-                </CustomLayout>
+                </Switch>
             </Router>
         </div>
     );

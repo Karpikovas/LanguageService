@@ -12,7 +12,10 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
+const AntdScssThemePlugin = require('antd-theme-webpack-plugin');
 
+
+const themePlugin = new AntDesignThemePlugin(options);
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
 const publicPath = paths.servedPath;
@@ -117,6 +120,7 @@ module.exports = {
       // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
       // please link the files into your node_modules/ and let module-resolution kick in.
       // Make sure your source files are compiled, as they will not be processed in any way.
+         new AntdScssThemePlugin('./theme.scss'),
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
     ],
   },
@@ -295,6 +299,7 @@ module.exports = {
     ],
   },
   plugins: [
+      themePlugin,
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
