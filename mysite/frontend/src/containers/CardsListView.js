@@ -1,7 +1,7 @@
 import React from 'react';
-import Cards from './Cards';
+import Cards from '../components/Cards';
 import axios from 'axios';
-import WordForm from './Form';
+import WordForm from '../components/Form';
 class CardsListView extends React.Component{
     state = {
         cards: []

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route} from 'react-router-dom';
-import CardListView from './CardsListView';
-import WordForm from './Form';
+import CardListView from './containers/CardsListView';
 const BaseRouter = () => (
     <div>
         <Route exact path='/' component={CardListView}/>

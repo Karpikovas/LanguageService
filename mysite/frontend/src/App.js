@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import 'antd/dist/antd.css';
-import CustomLayout from './Layout';
+import CustomLayout from './containers/Layout';
 import {BrowserRouter as Router, Switch} from 'react-router-dom';
-import MainRouter from './MainRouter';
 import BaseRouter from "./routes";
 import TranslateRouter from './routes2'
 

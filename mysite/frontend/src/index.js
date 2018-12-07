@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.less';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import SimpleSlider from './Simple';
 
 function cards(state = [], action) {
     if (action.type === 'ADD_CARD'){
