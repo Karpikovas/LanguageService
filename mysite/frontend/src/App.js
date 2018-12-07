@@ -12,12 +12,11 @@ class App extends Component {
     return (
 
         <div>
-            <Router>
-                <Switch>
-                   <TranslateRouter/>
-                    <BaseRouter/>
-                </Switch>
-            </Router>
+            <CustomLayout>
+                <Router>
+                        <BaseRouter/>
+                </Router>
+            </CustomLayout>
         </div>
     );
   }

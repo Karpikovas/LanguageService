@@ -1,14 +1,10 @@
 import React from 'react';
 import { Route} from 'react-router-dom';
 import CardListView from './CardsListView';
-import SimpleSlider from "./Simple";
-import CustomLayout from './Layout'
+import WordForm from './Form';
 const BaseRouter = () => (
     <div>
-        <CustomLayout>
-                <Route exact path='/' component={CardListView}/>
-        </CustomLayout>
-
+        <Route exact path='/' component={CardListView}/>
     </div>
 );
 

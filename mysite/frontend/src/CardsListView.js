@@ -1,6 +1,7 @@
 import React from 'react';
 import Cards from './Cards';
 import axios from 'axios';
+import WordForm from './Form';
 class CardsListView extends React.Component{
     state = {
         cards: []
@@ -17,7 +18,12 @@ class CardsListView extends React.Component{
     }
     render(){
         return (
-            <Cards data={this.state.cards}/>
+            <div>
+                <WordForm requestType='post' cardID={null}/>
+                <br/>
+                <Cards data={this.state.cards}/>
+            </div>
+
         );
     }
 }
