@@ -35,19 +35,26 @@ urlpatterns += router.urls
 
 """
 from rest_framework import routers
+from django.contrib import admin
 from django.urls import path
-from . import views
-from .views import Cards, CardsViewSet
-from .apiviews import WordsList
+from django.conf.urls import url, include
 from .views import *
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='Pastebin API')
 """
 
 urlpatterns = [
     path('cards/',WordsList.as_view()),
     path('users/register', UserCreation.as_view())
 ]"""
-
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    url(r'^docs', schema_view),
+    url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
+    url(r'^rest-auth/', include('rest_auth.urls'))
+]
 router = routers.DefaultRouter()
 
 router.register(r'cards', CardsView, basename='cards_list')
-urlpatterns = router.urls
+urlpatterns += router.urls

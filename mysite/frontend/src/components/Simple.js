@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 import { Carousel } from 'antd';
 import 'antd/dist/antd.less';
 

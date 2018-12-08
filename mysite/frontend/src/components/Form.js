@@ -1,10 +1,9 @@
 import React from 'react';
 import {
-  Drawer, Form, Button, Col, Row, Input, Select, DatePicker,Radio
+  Drawer, Form, Button, Col, Row, Input, Radio
 } from 'antd';
 import axios from "axios";
 
-const { Option } = Select;
 const RadioGroup = Radio.Group;
 class DrawerForm extends React.Component {
   state = {

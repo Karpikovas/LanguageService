@@ -42,9 +42,15 @@ INSTALLED_APPS = [
     'mysiteapp',
     'rest_framework_swagger',
     'rest_framework.authtoken',
+    'rest_auth',
     'corsheaders',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
+    'allauth.socialaccount',
 ]
-
+SITE_ID = 1
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
@@ -72,6 +78,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000/'
 )
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
@@ -141,3 +148,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+ACCOUNT_EMAIL_VERIFICATION='none'
+ACCOUNT_AUTHENTICATION_METHOD='username'
+ACCOUNT_EMAIL_REQUIRED=False
