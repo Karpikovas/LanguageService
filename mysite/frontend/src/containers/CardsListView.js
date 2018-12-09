@@ -21,6 +21,7 @@ class CardsListView extends React.Component{
                 this.setState({
                     cards: res.data
                 });
+                console.log(res.data);
             })
 
         }

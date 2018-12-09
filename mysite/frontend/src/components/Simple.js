@@ -9,30 +9,31 @@ const { Meta } = Card;
 class SimpleSlider extends React.Component {
 
 
-    addChangeWord = (event, cardID) => {
+    addChangeWord = (event, cardID, rate, translate) => {
       event.preventDefault();
       var word = event.target.elements.myword.value;
       //var cardID = event.target.elements.card.value;
-      var rate = this.props.data[cardID-1].rate;
+     // var rate = Number(this.props.data[cardID-1].rate);
 
-      console.log(rate);
+
+      console.log(this.props.data);
       console.log(this.props.token);
 
-      if (word === this.props.data[cardID-1].translate){
-          var newrate = rate + 10;
+      if (word === translate){
+         var newrate = rate + 10;
           console.log(cardID);
-            console.log(newrate);
+           // console.log(newrate);
 
                 axios.defaults.headers={
             "Content-Type": "application/json",
             "Authorization": `Token ${this.props.token}`
         }
-        axios.put(`http://127.0.0.1:8000/api/cards/${cardID}/`,{
-                word: this.props.data[cardID-1].word,
-                translate: this.props.data[cardID-1].translate,
-                rate: newrate,
-                is_learned: newrate === 100,
-                pos: this.props.data[cardID-1].pos
+        axios.patch(`http://127.0.0.1:8000/api/cards/${cardID}/`,{
+                id: cardID,
+                rate: newrate
+                //rate: newrate,
+                //is_learned: newrate === 100,
+                //pos: this.props.data[cardID].pos
             })
             .then(res => console.log(res))
                 .catch(error => console.error(error));
@@ -60,7 +61,9 @@ class SimpleSlider extends React.Component {
         {this.props.data.map(item => (
           <form name="card" key={item.id} onSubmit={(event)=>this.addChangeWord(
               event,
-              item.id
+              item.id,
+              item.rate,
+              item.translate
           )}>
             <h1>{item.word}</h1>
               <Input  name="myword" placeholder="Введите слово" />

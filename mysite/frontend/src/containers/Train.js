@@ -11,9 +11,6 @@ class Train extends React.Component {
         cards: []
     }
 
-    filterBy(data, field, value) {
-        return data.filter(item => item[field] === value);
-}
     componentWillReceiveProps(newProps){
         if (newProps.token){
                     axios.defaults.headers={
@@ -21,13 +18,9 @@ class Train extends React.Component {
             "Authorization": `Token ${newProps.token}`
         }
         axios.get('http://127.0.0.1:8000/api/cards/')
-            .then(res =>
-            {
-                var arr = this.filterBy(res.data, 'is_learned', false);
-                arr.sort( function() { return 0.5 - Math.random() } );
-                var newarr = arr.slice(0,5);
+            .then(res => {
                 this.setState({
-                    cards: newarr
+                    cards: res.data
                 });
             })
         }
