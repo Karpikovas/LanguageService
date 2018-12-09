@@ -8,11 +8,12 @@ class TranslateInline(admin.StackedInline):
 
 
 class CardAdmin(admin.ModelAdmin):
-    inlines = [TranslateInline]
+    model = CardWord
+    extra = 5
 
 class TranslateAdmin(admin.ModelAdmin):
     list_display = ['translate', 'card']
 
 
-admin.site.register(Card, CardAdmin)
+admin.site.register(CardWord, CardAdmin)
 admin.site.register(Translate, TranslateAdmin)

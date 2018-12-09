@@ -74,7 +74,17 @@ class UserCreateSerializer(serializers.ModelSerializer):
         return validated_data
 
 class CardWordSerializer(serializers.ModelSerializer):
-
+    owner = serializers.HiddenField(
+        default=serializers.CurrentUserDefault()
+    )
     class Meta:
         model = CardWord
         fields = '__all__'
+
+
+class UserSerializer(serializers.ModelSerializer):
+    cards = serializers.PrimaryKeyRelatedField(many=True, queryset=CardWord.objects.all())
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'cards')

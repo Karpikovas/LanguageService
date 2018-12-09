@@ -1,6 +1,15 @@
 from django.http import JsonResponse, Http404
 from rest_framework.response import Response
+from rest_framework.parsers import FormParser
+from django.http import HttpResponse
 from rest_framework import generics
+from .permissions import IsOwner
+from rest_framework import permissions, authentication
+from rest_framework.decorators import api_view
+from django.utils.six import text_type
+from django.utils.translation import ugettext_lazy as _
+
+from rest_framework import HTTP_HEADER_ENCODING, exceptions
 
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.views import APIView
@@ -62,11 +71,67 @@ class Cards(APIView):
         return Response({'Cards': queryset})
 
 
-class UserCreation(generics.CreateAPIView):
+class Users(viewsets.ModelViewSet):
     queryset = User.objects.all()
-    serializer_class = UserCreateSerializer
+    serializer_class = UserSerializer
 
 
 class CardsView(viewsets.ModelViewSet):
     queryset = CardWord.objects.all()
     serializer_class = CardWordSerializer
+    #permission_classes = [IsOwner]
+    authentication_classes = (authentication.TokenAuthentication, authentication.SessionAuthentication,)
+
+    def get(self, request, format=None):
+        queryset = CardWord.objects.filter(owner=request.user)
+        serializer = CardWordSerializer(queryset, many=True)
+
+        return Response(serializer.data)
+
+    #def perform_create(self, serializer):
+     #   serializer.save(owner=self.request.auth)
+def get_authorization_header(request):
+    """
+    Return request's 'Authorization:' header, as a bytestring.
+
+    Hide some test client ickyness where the header can be unicode.
+    """
+    auth = request.META.get('HTTP_AUTHORIZATION', b'')
+    if isinstance(auth, text_type):
+        # Work around django test client oddness
+        auth = auth.encode(HTTP_HEADER_ENCODING)
+    return auth
+
+
+def get_model(self):
+    from rest_framework.authtoken.models import Token
+    return Token
+
+class CardsWordView(APIView):
+    authentication_classes = (authentication.TokenAuthentication, authentication.SessionAuthentication,)
+    #permission_classes = (permissions.IsAdminUser,)
+    key = "dict.1.1.20181118T141413Z.bfcea663a4053215.b4c2bb5d5ce05190b93ce88c5f596dfb556fcbc7"
+
+    def get(self, request, format=None):
+        queryset = CardWord.objects.filter(owner=request.user)
+        serializer = CardWordSerializer(queryset, many=True)
+
+        return Response(serializer.data)
+
+    def post(self, request):
+        url = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key={0}&lang=en-ru&text={1}".format(self.key,
+                                                                                                               request.data["word"])
+        response = requests.get(url)
+        data = response.json()
+        card = CardWord.objects.create(
+            owner=request.user,
+            word=data['def'][0]['text'],
+            translate=data['def'][0]['tr'][0]['text'],
+            pos=data['def'][0]['pos']
+        )
+        serializer = CardWordSerializer(CardWord.objects.all(), many=True)
+        if serializer.is_valid():
+            serializer.save()
+            queryset = CardWord.objects.all()
+            return Response({'Cards': queryset})
+        return Response(serializer.errors)

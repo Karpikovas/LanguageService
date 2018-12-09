@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import 'antd/dist/antd.css';
 import CustomLayout from './containers/Layout';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import BaseRouter from "./routes";
 import * as actions from './store/actions/auth';
-
+import CardListView from "./containers/CardsListView";
+import SiderDemo from "./containers/Layout";
 class App extends Component {
     componentDidMount(){
         this.props.onTryAutoSignup();
@@ -15,9 +16,9 @@ class App extends Component {
 
         <div>
             <Router>
-                <CustomLayout {...this.props}>
+                <SiderDemo {...this.props}>
                     <BaseRouter/>
-                </CustomLayout>
+                </SiderDemo>
             </Router>
         </div>
     );

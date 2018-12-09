@@ -3,6 +3,7 @@ import {
   Drawer, Form, Button, Col, Row, Input, Radio
 } from 'antd';
 import axios from "axios";
+import connect from "react-redux/es/connect/connect";
 
 const RadioGroup = Radio.Group;
 class DrawerForm extends React.Component {
@@ -25,27 +26,30 @@ class DrawerForm extends React.Component {
             })
   }
 
-  addChangeWord = (event, requestType, cardID) => {
+  addChangeWord = (event, requestType, newProps , cardID) => {
       event.preventDefault();
-      const word = event.target.elements.myword.value;
+      var word = event.target.elements.myword.value;
       console.log(word);
-
+      axios.defaults.headers={
+            "Content-Type": "application/json",
+            "Authorization": `Token ${this.props.token}`
+        }
+        console.log(this.props.token);
       switch( requestType ){
           case 'post':
             return axios.post('http://127.0.0.1:8000/api/cards/',{
-                word: "word",
-                translate: "word"
+                word: `${word}`
             })
             .then(res => console.log(res))
                 .catch(error => console.error(error));
           case 'put':
             return axios.put(`http://127.0.0.1:8000/api/cards/${cardID}/`,{
-                word: word,
-                translate: this.translate
+                word: "word"
             })
             .then(res => console.log(res))
                 .catch(error => console.error(error));
       }
+      this.forceUpdate();
 
   }
   showDrawer = () => {
@@ -84,6 +88,7 @@ class DrawerForm extends React.Component {
           <Form layout="vertical" hideRequiredMark onSubmit={(event)=>this.addChangeWord(
               event,
               this.props.requestType,
+              this.props.newProps,
               this.props.cardID)}>
             <Row gutter={16}>
               <Col span={12}>
@@ -93,7 +98,7 @@ class DrawerForm extends React.Component {
               </Col>
                 <Col span={12}>
                 <Form.Item>
-                    <Button type="primary" onClick={this.findWord} >Найти</Button>
+                    <Button type="primary" htmlType="submit" >Найти</Button>
                 </Form.Item>
               </Col>
             </Row>
@@ -149,5 +154,9 @@ class DrawerForm extends React.Component {
 }
 
 const WordForm = Form.create()(DrawerForm);
-
-export default WordForm;
+const mapStateToProps = state => {
+    return {
+        token: state.token
+    }
+};
+export default connect(mapStateToProps)(WordForm);
