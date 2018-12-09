@@ -82,6 +82,8 @@ class CardWordSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+
+
 class UserSerializer(serializers.ModelSerializer):
     cards = serializers.PrimaryKeyRelatedField(many=True, queryset=CardWord.objects.all())
 

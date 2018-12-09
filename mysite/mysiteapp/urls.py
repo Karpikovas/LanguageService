@@ -51,11 +51,12 @@ urlpatterns = [
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^docs', schema_view),
-    url(r'^cards', CardsWordView.as_view()),
+    url(r'^cards/$', CardsWordView.as_view()),
+    #path('cards/<int:pk>/', WordDetail.as_view(), name='word'),
     url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
     url(r'^rest-auth/', include('rest_auth.urls'))
 ]
 router = routers.DefaultRouter()
 
-#router.register(r'cards', CardsView, basename='cards_list')
+router.register(r'^cards', WordDetail, basename='cards_list')
 urlpatterns += router.urls

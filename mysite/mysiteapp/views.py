@@ -2,6 +2,7 @@ from django.http import JsonResponse, Http404
 from rest_framework.response import Response
 from rest_framework.parsers import FormParser
 from django.http import HttpResponse
+from rest_framework import status
 from rest_framework import generics
 from .permissions import IsOwner
 from rest_framework import permissions, authentication
@@ -135,3 +136,32 @@ class CardsWordView(APIView):
             queryset = CardWord.objects.all()
             return Response({'Cards': queryset})
         return Response(serializer.errors)
+"""
+class WordDetail(generics.RetrieveDestroyAPIView):
+    queryset = CardWord.objects.all()
+    authentication_classes = (authentication.TokenAuthentication, authentication.SessionAuthentication,)
+    serializer_class = CardWordSerializer
+"""
+
+
+class WordDetail(viewsets.ModelViewSet):
+    authentication_classes = (authentication.TokenAuthentication, authentication.SessionAuthentication,)
+    queryset = CardWord.objects.all()
+    serializer_class = CardWordSerializer
+    """def put(self, request, pk, format=None):
+        card = CardWord.objects.filter(id=request.data["id"])
+        data = request.data
+        serializer = CardWordSerializer(card, data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+"""
+
+
+
+    """def delete(self, request, pk, format=None):
+        card = self.get_object(pk)
+        card.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+"""
