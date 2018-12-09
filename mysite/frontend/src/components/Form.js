@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Drawer, Form, Button, Col, Row, Input, Radio
+  Drawer, Form, Button, Col, Row, Input, Radio, Icon
 } from 'antd';
 import axios from "axios";
 import connect from "react-redux/es/connect/connect";
@@ -9,7 +9,7 @@ const RadioGroup = Radio.Group;
 class DrawerForm extends React.Component {
   state = {
       visible: false,
-      checkedTr: "",
+      checkedTr: '',
       yandexAPI: []
   };
 
@@ -42,10 +42,8 @@ class DrawerForm extends React.Component {
             })
             .then(res => console.log(res))
                 .catch(error => console.error(error));
-          case 'put':
-            return axios.put(`http://127.0.0.1:8000/api/cards/${cardID}/`,{
-                word: "word"
-            })
+          case 'delete':
+            return axios.delete(`http://127.0.0.1:8000/api/cards/${cardID}/`)
             .then(res => console.log(res))
                 .catch(error => console.error(error));
       }
@@ -67,14 +65,16 @@ class DrawerForm extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <div>
-        <Button type="primary" onClick={this.showDrawer}>
-            Добавить новое слово
+      <div align="center">
+          <br/>
+        <Button size= 'large' type="primary" align="center" onClick={this.showDrawer}>
+            <Icon type="plus-circle" size='large' width={20} height={20}> </Icon>
+                <span>Добавить новое слово</span>
         </Button>
         <Drawer
           title="Добавить слово"
           width={720}
-          placement="right"
+          placement="bottom"
           onClose={this.onClose}
 
           maskClosable={false}
@@ -98,28 +98,8 @@ class DrawerForm extends React.Component {
               </Col>
                 <Col span={12}>
                 <Form.Item>
-                    <Button type="primary" htmlType="submit" >Найти</Button>
-                </Form.Item>
-              </Col>
-            </Row>
-            <Row gutter={16}>
-              <Col span={12}>
-                <Form.Item label="Варианты перевода">
-                  {getFieldDecorator('Варианты перевода', {
-                    rules: [{ required: true, message: 'Выбран перевод' }],
-                  })(
-                      <div>
-                          <RadioGroup defaultValue={1} >
-                              <Radio >Вариант 1</Radio>
-                              <Radio value={2}>B</Radio>
-                                <Radio value={3}>C</Radio>
-                                <Radio value={4}>D</Radio>
-                             </RadioGroup>
 
-
-                      </div>
-
-                  )}
+                    <Button type="primary" htmlType="submit"      onClick={this.onClose} >Добавить</Button>
                 </Form.Item>
               </Col>
             </Row>
@@ -145,7 +125,6 @@ class DrawerForm extends React.Component {
             >
               Отмена
             </Button>
-            <Button onClick={this.onClose} type="primary" htmlType="submit">Добавить</Button>
           </div>
         </Drawer>
       </div>

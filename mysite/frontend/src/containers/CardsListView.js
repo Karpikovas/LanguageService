@@ -31,7 +31,6 @@ class CardsListView extends React.Component{
         return (
             <div>
                 <WordForm requestType='post' cardID={null}/>
-                <div>{this.props.token}</div>
                 <br/>
                 <Cards data={this.state.cards}/>
             </div>

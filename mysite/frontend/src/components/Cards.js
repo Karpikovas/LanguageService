@@ -11,9 +11,7 @@ const Cards = (props) => {
     dataSource={props.data}
     renderItem={item => (
       <List.Item>
-          <Card title={item.word} actions={[<Icon type="delete" />, <Icon type="edit">
-
-          </Icon>]} extra={<Progress type="circle" percent={Number(item.rate)} width={50} />}>
+          <Card title={item.word} extra={<Progress type="circle" percent={Number(item.rate)} width={50} />}>
                 <Meta description={item.pos}/>
               <h4>{item.translate}</h4>
           </Card>
@@ -24,3 +22,4 @@ const Cards = (props) => {
 }
 
 export default Cards;
+

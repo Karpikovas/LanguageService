@@ -4,10 +4,15 @@
     <list default="true" id="a4aebaf8-06ba-45ea-af79-3710322f2369" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/frontend/src/components/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/components/Cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/frontend/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/components/Form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/frontend/src/components/Simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/components/Simple.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/frontend/src/containers/CardsListView.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/containers/CardsListView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/frontend/src/containers/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/containers/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/frontend/src/containers/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/containers/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/frontend/src/containers/Train.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/containers/Train.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysiteapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysiteapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/frontend/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/frontend/src/routes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +38,7 @@
     <session id="1688044403">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="1" />
@@ -51,7 +56,7 @@
           <entry key="css" value="8" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="4" />
-          <entry key="js" value="96" />
+          <entry key="js" value="106" />
           <entry key="json" value="4" />
           <entry key="less" value="9" />
           <entry key="py" value="52" />
@@ -63,7 +68,7 @@
           <entry key="CSS" value="8" />
           <entry key="HTML" value="4" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="96" />
+          <entry key="JavaScript" value="106" />
           <entry key="Less" value="9" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="52" />
@@ -75,7 +80,7 @@
           <entry key="css" value="201" />
           <entry key="gitignore" value="26" />
           <entry key="html" value="391" />
-          <entry key="js" value="11248" />
+          <entry key="js" value="15291" />
           <entry key="json" value="52" />
           <entry key="less" value="34" />
           <entry key="py" value="5807" />
@@ -86,7 +91,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="391" />
           <entry key="JSON" value="54" />
-          <entry key="JavaScript" value="11248" />
+          <entry key="JavaScript" value="15291" />
           <entry key="Less" value="34" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="Python" value="5807" />
@@ -97,34 +102,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Form.js">
+        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-800">
-              <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/CardsListView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Simple.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="1160">
+              <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -135,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Train.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="105">
+              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -145,10 +126,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Cards.js">
+        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="157">
+              <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -159,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/frontend/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="380">
+              <caret line="65" column="16" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="65" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -169,10 +150,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/routes.js">
+        <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Cards.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -180,35 +161,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="174" column="3" selection-start-line="174" selection-start-column="3" selection-end-line="174" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-              <folding>
-                <element signature="e#1088#1122#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1798">
-              <caret line="177" column="39" lean-forward="true" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="39" />
+            <state relative-caret-position="180">
+              <caret line="180" column="50" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -236,6 +193,7 @@
       <find>plugins</find>
       <find>submit</find>
       <find>get_authorization_header</find>
+      <find>getres</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -244,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mysite/mysiteapp/static/css/base.css" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/templates/exercises/enter_word.html" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/static/frontend/main.js" />
         <option value="$PROJECT_DIR$/mysite/.babelrc" />
@@ -276,7 +233,6 @@
         <option value="$PROJECT_DIR$/mysite/frontend/src/store/utility.js" />
         <option value="$PROJECT_DIR$/mysite/frontend/src/store/reducers/auth.js" />
         <option value="$PROJECT_DIR$/mysite/frontend/src/index.js" />
-        <option value="$PROJECT_DIR$/mysite/frontend/src/containers/Login.js" />
         <option value="$PROJECT_DIR$/mysite/frontend/src/components/Translate.js" />
         <option value="$PROJECT_DIR$/mysite/frontend/src/containers/Signup.js" />
         <option value="$PROJECT_DIR$/mysite/frontend/src/store/actions/auth.js" />
@@ -285,16 +241,18 @@
         <option value="$PROJECT_DIR$/mysite/mysiteapp/models.py" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/admin.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/frontend/src/components/Form.js" />
-        <option value="$PROJECT_DIR$/mysite/frontend/src/App.js" />
-        <option value="$PROJECT_DIR$/mysite/frontend/src/containers/Layout.js" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/serializers.py" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/frontend/src/routes.js" />
-        <option value="$PROJECT_DIR$/mysite/frontend/src/containers/Train.js" />
         <option value="$PROJECT_DIR$/mysite/mysiteapp/views.py" />
+        <option value="$PROJECT_DIR$/mysite/frontend/src/App.js" />
+        <option value="$PROJECT_DIR$/mysite/frontend/src/routes.js" />
         <option value="$PROJECT_DIR$/mysite/frontend/src/containers/CardsListView.js" />
+        <option value="$PROJECT_DIR$/mysite/frontend/src/components/Cards.js" />
+        <option value="$PROJECT_DIR$/mysite/frontend/src/containers/Train.js" />
+        <option value="$PROJECT_DIR$/mysite/frontend/src/components/Form.js" />
         <option value="$PROJECT_DIR$/mysite/frontend/src/components/Simple.js" />
+        <option value="$PROJECT_DIR$/mysite/frontend/src/containers/Login.js" />
+        <option value="$PROJECT_DIR$/mysite/frontend/src/containers/Layout.js" />
       </list>
     </option>
   </component>
@@ -334,6 +292,35 @@
               <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
               <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LanguageService" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LanguageService" type="b2602c69:ProjectViewProjectNode" />
@@ -417,9 +404,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49395972" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49261746" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5060403" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5073826" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -429,7 +416,7 @@
       <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25167784" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25100672" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,9 +428,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49395972" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49261746" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5060403" side_tool="true" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5073826" side_tool="true" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -740,23 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/apiviews.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -777,56 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-800">
-          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1798">
-          <caret line="177" column="39" lean-forward="true" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Cards.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -837,10 +757,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Train.js">
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="80">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -849,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysiteapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="537">
           <caret line="174" column="3" selection-start-line="174" selection-start-column="3" selection-end-line="174" selection-end-column="3" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
@@ -857,10 +784,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/CardsListView.js">
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="380">
+          <caret line="65" column="16" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Cards.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -869,8 +816,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/frontend/src/components/Simple.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="14">
+          <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/CardsListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Train.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/frontend/src/containers/Layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="180" column="50" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

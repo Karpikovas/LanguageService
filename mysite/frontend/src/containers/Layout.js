@@ -1,13 +1,13 @@
 import React from 'react';
 import * as actions from "../store/actions/auth";
 import connect from "react-redux/es/connect/connect";
-import { Link, withRouter } from 'react-router-dom';
+import { NavLink, Switch, Link, withRouter } from 'react-router-dom';
 import {
-  Layout, Menu, Breadcrumb, Icon,
+  Layout, Menu, Breadcrumb, Icon,Button
 } from 'antd';
 
 const {
-  Header, Content, Footer, Sider,
+  Header, Content, Footer, Sider,Carousel
 } = Layout;
 const SubMenu = Menu.SubMenu;
 /*
@@ -119,7 +119,7 @@ class SiderDemo extends React.Component {
   }
     toggle = () => {
     this.setState({
-      collapsed: !this.state.collapsed,
+      collapsed: true
     });
   }
 
@@ -138,40 +138,26 @@ class SiderDemo extends React.Component {
                               <div className="logo" />
                               <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
 
-                              <Menu.Item key="1" onClick={this.props.logout}>
-                                Выйти
+                              <Menu.Item key="1" onClick={(event)=>{this.props.logout()}}>
+                                <Icon type="logout" />
+                                  <span>Выйти</span>
                                 </Menu.Item>
+
                                   <Menu.Item key="3">
-                                        <Link to='/'>Мои карточки</Link>
+                                        <NavLink activeClassName="active" to={{
+                                          pathname: '/',
+                                            state: {
+                                            fromNotifications: true
+                                          }
+                                        }
+                                        }> <Icon type="table" />
+                                  <span>Мои карточки</span></NavLink>
                                     </Menu.Item>
                                        <Menu.Item key="4">
-                                        <Link to='/train/' onClick={this.toggle}>Тренировка</Link>
+                                        <NavLink  to='/train/' onClick={this.toggle}>
+                                            <Icon type="down-circle" /> <span>Тренировка</span></NavLink>
                                     </Menu.Item>
-                                <Menu.Item key="5">
-                                  <Icon type="pie-chart" />
-                                  <span>Option 1</span>
-                                </Menu.Item>
-                                <Menu.Item key="6">
-                                  <Icon type="desktop" />
-                                  <span>Option 2</span>
-                                </Menu.Item>
-                                <SubMenu
-                                  key="sub1"
-                                  title={<span><Icon type="user" /><span>User</span></span>}
-                                >
-                                  <Menu.Item key="7">Tom</Menu.Item>
-                                  <Menu.Item key="8">Bill</Menu.Item>
-                                  <Menu.Item key="9">Alex</Menu.Item>
-                                </SubMenu>
-                                <SubMenu
-                                  key="sub2"
-                                  title={<span><Icon type="team" /><span>Team</span></span>}
-                                >
-                                </SubMenu>
-                                <Menu.Item key="9">
-                                  <Icon type="file" />
-                                  <span>File</span>
-                                </Menu.Item>
+
                               </Menu>
                             </Sider>
                               <Layout>
@@ -186,13 +172,24 @@ class SiderDemo extends React.Component {
 
                           </Layout>
                           :
-                    <Layout>
-                          <Content>
-                            <Link to='/login/'>Войти
+                    <Layout >
+                            <Content style={{background: '#87CEFA', margin: '24px 16px 0', overflow: 'initial' }}>
 
-                                </Link>
-                            {this.props.children}
+                     <div style={{ padding: 24, textAlign: 'center', overflow: 'initial' }}>
+
+                            <Link to='/login/' onClick={this.toggle}><Button type='primary' size='large'>
+                              <Icon type="plus" />
+                                <span>Присоединиться</span>
+                             </Button></Link>
+                         <br/>
+                         <br/>
+                             { this.state.collapsed ?
+                                 this.props.children
+                             :
+                             null}
+                     </div>
                         </Content>
+
                     </Layout>
                   }
 
